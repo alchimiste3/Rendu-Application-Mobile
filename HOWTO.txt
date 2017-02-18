@@ -1,0 +1,86 @@
+ELIM : C.E.S. (Cartographie de L'Environement Sonore)
+
+Auteur : Quentin Laborde et Clement Sibut
+
+
+Cette page explique comment installer et utiliser les deux partie de notre projet : la partie ambarqué (android) et la partie distante (le serveur).
+
+
+Installation de l'application et du serveur : 
+
+  A la racine du rendu : 
+  	Pour le serveur : 
+	    -Decompreser le fichier serveur.zip
+
+	    - Compiler et deployer le serveur
+	    	-Sur linux : lancer le script script_install_server (faire un chmod si besoin)
+	    	-Sur Window : 
+	    		→ Compiler le projet maven "rest" qui est dans les Sources 
+	    		→ Copier/coller l'executable ws-rest-1.0.jar du dossier target du projet au dossier deploy du serveur (apache-servicemix-7.0.0.M2/deploy)
+
+	Pour l'application : 
+		-Charger le fichier CES-1.0-debug.apk dans votre smartPhone Android (compatible avec android 5.0 minimum)
+
+
+
+
+Man (Manuel d'utilisation):
+
+  	Pour lancer le serveur : 
+
+  		Le serveur est un ensemble de service RESTful qui sont deploye sur un serveur Apache Service Mix qui deploy dynamiquement des service sur un reseau local. 
+
+  		- Pour lancer le serveur (a la racine du rendu): 
+  			-Sur Linux :	
+  				→ Aller dans le dossier apache-servicemix-7.0.0.M2/bin
+  				→ lancer le script : ./servicemix
+  			-Sur Windows : 
+  				→ Aller dans le dossier apache-servicemix-7.0.0.M2/bin
+				→ double clic sur servicemix.bat
+
+			Au lancement, le serveur charge automatiquement les données qui sont stocke dans un fichier. Le deployment est dynamique et deja configure lors de la compilation du projet.
+
+		- Utilisation :
+			L'application utilise les services fournie automatiquement grace a l'adresse IP du serveur sur le port. L'utilisateur n'utilise pas le serveur de fason directe.
+
+			→ Les services RESTful sont accessible a l'adresse : http://localhost:8181/cxf/demo/treatment
+
+
+	Pour l'Application :
+
+		- Connexion au serveur :
+		    Dans le Menu : 
+		    
+		    Configuration de la connexion : 
+		        → Choisir Panneau des options
+		        → Saisir l'IP du serveur et le port
+		        → Retour
+		        
+		    Envoi des données au serveur : 
+		        → Appuyer sur Envoyer amplitudes vers le serveur
+		        
+		    (debug) Récupération manuelle des données à patir du serveur :
+		        → Appuyer sur Récupérer clusters depuis le serveur
+
+		- Affichage des clusters : 
+
+		    Configuration du calcul des clusters : 
+		        → Choisir entre En exterieur/ En interieur pour que le calcul des clusters en tienne compte
+		        → Choisir entre En activité / En Repos pour que le calcul des clusters en tienne compte
+		        → Choisir un jour pour que le calcul des clusters ne s'effectue que pour le jour sélectionné
+		        → Precision : Permet de définir le nombre de clusters pour plus ou moins de precision
+
+		    Afficher la pollution pour cette date : Affiche sur une carte les clusters calculés et récupérés à partir du serveur
+
+		- Enregistrement de niveaux sonores :
+
+		    Activer la géolocalisation sur le téléphone
+
+		    Configuration des options : 
+		        → Exterieur / Interieur : Préciser où l'on se situe lors de l'enregistrement
+		        → Activite bruyante : Préciser si l'on est en activité ou en repos
+		        → Intervalle entre chaque capture : Permet de définir l'intervalle de temps en minutes entre 2 mesures de niveaux sonores.
+		    
+		    Appuyer sur Enregistrer pour démarrer l'enregistrement et Stop pour l'arrêter
+		    
+		    Appuyer sur Supprimer les enregistrements pour supprimer les niveaux sonores après les avoir envoyés au serveur

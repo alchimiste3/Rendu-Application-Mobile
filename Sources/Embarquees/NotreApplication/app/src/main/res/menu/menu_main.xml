@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.android.testservice.testservice.activity.MainActivity"
+    >
+<!--
+    <item
+        android:id="@+id/confActivity"
+        android:orderInCategory="100"
+        android:title="Option"
+        app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/sendData"
+        android:orderInCategory="100"
+        android:title="Envoyer Amplitudes vers le serveur"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/getClusters"
+        android:orderInCategory="100"
+        android:title="Récupérer Clusters depuis le serveur"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/option"
+        android:orderInCategory="100"
+        android:title="Panneau des options"
+        app:showAsAction="never" />
+
+
+
+
+
+
+
+</menu>

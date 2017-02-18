@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1487339802020
+Build-Jdk: 1.8.0_65
+Built-By: user
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-ClassPath: .,org.apache.servicemix.specs.jsr339-api-2.0-2.5.0.jar
+ ,org.apache.servicemix.bundles.commons-httpclient-3.1_7.jar,commons-log
+ ging-1.0.4.jar,org.apache.servicemix.bundles.commons-codec-1.3_2.jar,js
+ on-20160810.jar
+Bundle-ManifestVersion: 2
+Bundle-Name: ELIM : REST-based implementation
+Bundle-SymbolicName: ws-rest
+Bundle-Version: 1.0
+Created-By: Apache Maven Bundle Plugin
+Embed-Dependency: *;scope=compile;inline=false
+Embed-Transitive: true
+Embedded-Artifacts: org.apache.servicemix.specs.jsr339-api-2.0-2.5.0.jar
+ ;g="org.apache.servicemix.specs";a="org.apache.servicemix.specs.jsr339-
+ api-2.0";v="2.5.0",org.apache.servicemix.bundles.commons-httpclient-3.1
+ _7.jar;g="org.apache.servicemix.bundles";a="org.apache.servicemix.bundl
+ es.commons-httpclient";v="3.1_7",commons-logging-1.0.4.jar;g="commons-l
+ ogging";a="commons-logging";v="1.0.4",org.apache.servicemix.bundles.com
+ mons-codec-1.3_2.jar;g="org.apache.servicemix.bundles";a="org.apache.se
+ rvicemix.bundles.commons-codec";v="1.3_2",json-20160810.jar;g="org.json
+ ";a="json";v="20160810"
+Import-Package: javax.xml.bind.annotation,org.osgi.service.blueprint;ver
+ sion="[1.0.0,2.0.0)",javax.xml.bind,javax.ws.rs;version="[2.0,3)",javax
+ .ws.rs.core;version="[2.0,3)",javax.ws.rs.ext;version="[2.0,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Tool: Bnd-2.4.1.201501161923

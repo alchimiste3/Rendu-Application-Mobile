@@ -1,0 +1,8 @@
+fr/unice/polytech/elim/treatment/utils/Time.class
+fr/unice/polytech/elim/treatment/business/ListeAmplitudes.class
+fr/unice/polytech/elim/clustering/MyCluster.class
+fr/unice/polytech/elim/treatment/utils/Day.class
+fr/unice/polytech/elim/clustering/AmplitudeWithLocation.class
+fr/unice/polytech/elim/clustering/MyKMeans.class
+fr/unice/polytech/elim/treatment/business/Amplitude.class
+fr/unice/polytech/elim/treatment/Treatment.class
