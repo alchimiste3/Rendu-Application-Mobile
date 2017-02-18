@@ -10,7 +10,6 @@ Installation de l'application et du serveur :
 
   A la racine du rendu : 
   	Pour le serveur : 
-	    -Decompreser le fichier serveur.zip
 
 	    - Compiler et deployer le serveur
 	    	-Sur linux : lancer le script script_install_server (faire un chmod si besoin)
@@ -41,7 +40,7 @@ Man (Manuel d'utilisation):
 			Au lancement, le serveur charge automatiquement les données qui sont stocke dans un fichier. Le deployment est dynamique et deja configure lors de la compilation du projet.
 
 		- Utilisation :
-			L'application utilise les services fournie automatiquement grace a l'adresse IP du serveur sur le port. L'utilisateur n'utilise pas le serveur de fason directe.
+			L'application utilise les services fournie automatiquement grace a l'adresse IP du serveur et le port. L'utilisateur n'utilise pas le serveur de directement.
 
 			→ Les services RESTful sont accessible a l'adresse : http://localhost:8181/cxf/demo/treatment
 
