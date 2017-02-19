@@ -27,7 +27,7 @@ Man (Manuel d'utilisation):
 
   	Pour lancer le serveur : 
 
-  		Le serveur est un ensemble de service RESTful qui sont deploye sur un serveur Apache Service Mix qui deploy dynamiquement des service sur un reseau local. 
+  		Le serveur est un ensemble de service RESTful qui sont deploye sur un serveur Apache Service Mix qui deploy dynamiquement des services sur un reseau local. 
 
   		- Pour lancer le serveur (a la racine du rendu): 
   			-Sur Linux :	
