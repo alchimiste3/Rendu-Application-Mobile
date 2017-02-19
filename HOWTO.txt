@@ -11,11 +11,31 @@ Installation de l'application et du serveur :
   A la racine du rendu : 
   	Pour le serveur : 
 
+  		- Telecharger le serveur : http://www.apache.org/dyn/closer.lua/servicemix/servicemix-7/7.0.0/apache-servicemix-7.0.0.zip
+
+  		- Decompreser le .zip a la racine du rendu
+
+  		- lancer le serveur une premiere fois : 
+  			-Sur Linux :	
+  				→ Aller dans le dossier apache-servicemix-7.0.0/bin
+  				→ lancer le script : ./servicemix
+  			-Sur Windows : 
+  				→ Aller dans le dossier apache-servicemix-7.0.0/bin
+				→ double clic sur servicemix.bat
+
+		- Entrer les commandes : 
+			→ feature:install camel-http
+			→ shutdown
+			→ yes
+
+
 	    - Compiler et deployer le serveur
-	    	-Sur linux : lancer le script script_install_server (faire un chmod si besoin)
-	    	-Sur Window : 
+	    	- Sur linux : lancer le script script_install_server (faire un chmod si besoin)
+	    	- Sur Window : 
 	    		→ Compiler le projet maven "rest" qui est dans les Sources 
 	    		→ Copier/coller l'executable ws-rest-1.0.jar du dossier target du projet au dossier deploy du serveur (apache-servicemix-7.0.0.M2/deploy)
+
+	    - Copier le dossier dataAmplitudes dans la racine du serveur (dans apache-servicemix-7.0.0)
 
 	Pour l'application : 
 		-Charger le fichier CES-1.0-debug.apk dans votre smartPhone Android (compatible avec android 5.0 minimum)
@@ -31,13 +51,14 @@ Man (Manuel d'utilisation):
 
   		- Pour lancer le serveur (a la racine du rendu): 
   			-Sur Linux :	
-  				→ Aller dans le dossier apache-servicemix-7.0.0.M2/bin
+  				→ Aller dans le dossier apache-servicemix-7.0.0/bin
   				→ lancer le script : ./servicemix
   			-Sur Windows : 
-  				→ Aller dans le dossier apache-servicemix-7.0.0.M2/bin
+  				→ Aller dans le dossier apache-servicemix-7.0.0/bin
 				→ double clic sur servicemix.bat
 
-			Au lancement, le serveur charge automatiquement les données qui sont stocke dans un fichier. Le deployment est dynamique et deja configure lors de la compilation du projet.
+			Au lancement, le serveur charge automatiquement les données qui sont stocke dans un fichier 
+			(dans dataAmplitudes). Le deployment est dynamique et deja configure lors de la compilation du projet.
 
 		- Utilisation :
 			L'application utilise les services fournie automatiquement grace a l'adresse IP du serveur et le port. L'utilisateur n'utilise pas le serveur de directement.

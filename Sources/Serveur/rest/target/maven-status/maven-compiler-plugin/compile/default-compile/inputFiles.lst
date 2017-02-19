@@ -1,8 +1,8 @@
-/home/user/Cours/AppMobile/Rendu/Sources/Serveur/rest/src/main/java/fr/unice/polytech/elim/clustering/AmplitudeWithLocation.java
-/home/user/Cours/AppMobile/Rendu/Sources/Serveur/rest/src/main/java/fr/unice/polytech/elim/clustering/MyKMeans.java
-/home/user/Cours/AppMobile/Rendu/Sources/Serveur/rest/src/main/java/fr/unice/polytech/elim/treatment/utils/Time.java
-/home/user/Cours/AppMobile/Rendu/Sources/Serveur/rest/src/main/java/fr/unice/polytech/elim/treatment/business/Amplitude.java
-/home/user/Cours/AppMobile/Rendu/Sources/Serveur/rest/src/main/java/fr/unice/polytech/elim/treatment/utils/Day.java
-/home/user/Cours/AppMobile/Rendu/Sources/Serveur/rest/src/main/java/fr/unice/polytech/elim/treatment/Treatment.java
-/home/user/Cours/AppMobile/Rendu/Sources/Serveur/rest/src/main/java/fr/unice/polytech/elim/treatment/business/ListeAmplitudes.java
-/home/user/Cours/AppMobile/Rendu/Sources/Serveur/rest/src/main/java/fr/unice/polytech/elim/clustering/MyCluster.java
+/home/user/Cours/AppMobile/Rendu-Application-Mobile/Sources/Serveur/rest/src/main/java/fr/unice/polytech/elim/clustering/MyCluster.java
+/home/user/Cours/AppMobile/Rendu-Application-Mobile/Sources/Serveur/rest/src/main/java/fr/unice/polytech/elim/treatment/utils/Time.java
+/home/user/Cours/AppMobile/Rendu-Application-Mobile/Sources/Serveur/rest/src/main/java/fr/unice/polytech/elim/treatment/Treatment.java
+/home/user/Cours/AppMobile/Rendu-Application-Mobile/Sources/Serveur/rest/src/main/java/fr/unice/polytech/elim/treatment/business/ListeAmplitudes.java
+/home/user/Cours/AppMobile/Rendu-Application-Mobile/Sources/Serveur/rest/src/main/java/fr/unice/polytech/elim/treatment/utils/Day.java
+/home/user/Cours/AppMobile/Rendu-Application-Mobile/Sources/Serveur/rest/src/main/java/fr/unice/polytech/elim/clustering/AmplitudeWithLocation.java
+/home/user/Cours/AppMobile/Rendu-Application-Mobile/Sources/Serveur/rest/src/main/java/fr/unice/polytech/elim/treatment/business/Amplitude.java
+/home/user/Cours/AppMobile/Rendu-Application-Mobile/Sources/Serveur/rest/src/main/java/fr/unice/polytech/elim/clustering/MyKMeans.java

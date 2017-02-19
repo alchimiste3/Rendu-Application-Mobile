@@ -4,10 +4,10 @@ cd Sources/Serveur/rest
 
 mvn clean package
 
-cd ../../../apache-servicemix-7.0.0.M2/deploy
+cd ../../../apache-servicemix-7.0.0/deploy
 
 rm ws-rest-1.0.jar
 
 cd ../../Sources/Serveur/rest/target
 
-cp ws-rest-1.0.jar ../../../../apache-servicemix-7.0.0.M2/deploy/ws-rest-1.0.jar
+cp ws-rest-1.0.jar ../../../../apache-servicemix-7.0.0/deploy/ws-rest-1.0.jar
